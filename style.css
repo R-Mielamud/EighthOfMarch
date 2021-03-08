@@ -1,0 +1,84 @@
+.star::after {
+	content: "\066D";
+}
+
+.star {
+	font-size: 88px;
+	position: absolute;
+}
+
+.text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	color: #ff8888;
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+}
+
+.text div:nth-child(2) {
+	font-size: 320px;
+	font-weight: 900;
+}
+
+.text div:first-child,
+.text div:last-child {
+	font-size: 80px;
+}
+
+.flowers {
+	position: absolute;
+	top: 20vh;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.flowers.left {
+	left: 25vh;
+	animation-name: flowers-left;
+}
+
+.flowers.right {
+	right: 25vh;
+	animation-name: flowers-right;
+}
+
+body {
+	background-color: #ffe9e9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	height: 70%;
+}
+
+@keyframes flowers-left {
+	0% {
+		transform: rotateZ(-20deg) scale(1.5);
+	}
+
+	50% {
+		transform: rotateZ(-50deg) scale(1.5);
+	}
+
+	100% {
+		transform: rotateZ(-20deg) scale(1.5);
+	}
+}
+
+@keyframes flowers-right {
+	0% {
+		transform: rotateZ(20deg) scale(1.5);
+	}
+
+	50% {
+		transform: rotateZ(50deg) scale(1.5);
+	}
+
+	100% {
+		transform: rotateZ(20deg) scale(1.5);
+	}
+}
