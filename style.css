@@ -20,6 +20,7 @@
 .text div:nth-child(2) {
 	font-size: 320px;
 	font-weight: 900;
+	position: absolute;
 }
 
 .text div:first-child,
@@ -28,11 +29,11 @@
 }
 
 .text div:first-child {
-	transform: translateY(5vh);
+	transform: translateY(-140px);
 }
 
 .text div:last-child {
-	transform: translateY(-5vh);
+	transform: translateY(140px);
 }
 
 .flowers {
@@ -60,7 +61,7 @@ body {
 	align-items: center;
 	flex-direction: column;
 	width: 100%;
-	height: 70%;
+	height: 80%;
 }
 
 @keyframes flowers-left {
